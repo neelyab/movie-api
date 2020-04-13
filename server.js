@@ -51,6 +51,7 @@ app.use((error, req, res, next) => {
     }
     res.status(500).json(response)
   })
-const PORT = process.env.PORT || 8000
 
-module.exports = app
+  const PORT = process.env.PORT || 8000
+  app.listen(PORT, ()=>{
+  })
